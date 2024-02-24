@@ -1,0 +1,15 @@
+{
+    "name": "scraporio",
+    "version": "0.1.1",
+    "title": "Scraporio",
+    "author": "cackling fiend",
+    "homepage": "https://github.com/SimonBrodtmann/scraporio",
+    "dependencies": [
+        "scrap-resource",
+        "dangOreus",
+        "reverse-factory",
+        "Burner_Drill_4x4_Area"
+    ],
+    "description": "Inspired by FFF #399",
+    "factorio_version": "1.1"
+}
