@@ -41,27 +41,23 @@ table.insert(factory.crafting_categories, "recycle-productivity")
 table.insert(data.raw.furnace["reverse-factory-2"].crafting_categories, "recycle-productivity")
 table.insert(data.raw.furnace["reverse-factory-3"].crafting_categories, "recycle-productivity")
 
-data.raw.technology["reverse-factory-1"] = nil
-data.raw.technology["reverse-factory-2"].prerequisites[1] = nil
-
-data.raw.recipe["reverse-factory-1"].enabled = true
-
 local resource = data.raw.resource["scrap"]
 resource.minable.hardness = 1
+resource.minable.mining_time = 2
 resource.minable.results = {
-    { amount = 1, probability = 0.001, name = "nuclear-fuel", },
-    { amount = 1, probability = 0.005, name = "solar-panel", },
-    { amount = 1, probability = 0.005, name = "accumulator", },
-    { amount = 1, probability = 0.01, name = "uranium-238", },
-    { amount = 1, probability = 0.02, name = "processing-unit", },
-    { amount = 1, probability = 0.025, name = "flying-robot-frame", },
-    { amount = 1, probability = 0.04, name = "low-density-structure", },
-    { amount = 1, probability = 0.04, name = "heat-pipe", },
-    { amount = 1, probability = 0.05, name = "advanced-circuit", },
-    { amount = 1, probability = 0.15, name = "stone", },
-    { amount = 1, probability = 0.10, name = "solid-fuel", },
-    { amount = 1, probability = 0.1, name = "crude-oil-barrel", },
-    { amount = 1, probability = 0.1, name = "coal", },
-    { amount = 1, probability = 0.2, name = "iron-gear-wheel", },
-    { amount = 1, probability = 0.2, name = "steel-plate", },
+    { amount = 1, probability = 0.00001, name = "uranium-235", },
+    { amount = 1, probability = 0.0005, name = "uranium-238", },
+    { amount = 1, probability = 0.0005, name = "nuclear-fuel", },
+    { amount = 1, probability = 0.002, name = "solar-panel", },
+    { amount = 1, probability = 0.002, name = "accumulator", },
+    { amount = 1, probability = 0.01, name = "processing-unit", },
+    { amount = 1, probability = 0.0125, name = "flying-robot-frame", },
+    { amount = 1, probability = 0.02, name = "low-density-structure", },
+    { amount = 1, probability = 0.02, name = "heat-pipe", },
+    { amount = 1, probability = 0.025, name = "advanced-circuit", },
+    { amount = 1, probability = 0.075, name = "stone", },
+    { amount = 1, probability = 0.05, name = "solid-fuel", },
+    { amount = 1, probability = 0.05, name = "crude-oil-barrel", },
+    { amount = 1, probability = 0.1, name = "iron-gear-wheel", },
+    { amount = 1, probability = 0.1, name = "steel-plate", },
 }
